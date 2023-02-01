@@ -1,0 +1,19 @@
+#include <stdio.h>
+int main(void){
+    int diec1;
+    int diec2;
+    int sum;
+    int special;
+    scanf("%d", &diec1);
+    scanf("%d", &diec2);
+    sum = diec1 + diec2;
+    special = sum>=10;
+    if(special){
+        printf("Special tax\n");
+        printf("%d", 36);
+    }else{
+        printf("Regular tax\n");
+        printf("%d", 2*sum);
+    }
+    return 0;
+}
